@@ -13,6 +13,7 @@ Candidate: **StageDisc 1.0 (3)**, native macOS archive, Apple Silicon, minimum m
 - Prepared DTS and combined TrueHD+AC-3 are copied byte-identically. Independent transport packet extraction confirms all 7,200 TrueHD packets (1,835,996 bytes) and 188 AC-3 core packets (481,280 bytes) match their elementary sources. Both decode in full with identical source/transport decoded samples. Synthetic TrueHD has **no Atmos metadata**.
 - VLC/libbluray loads the BD-J runtime from the ISO, initialises the raster menu, autoplays the album, selects the default mix and returns to the menu after playback in three successive runs. The synchronous menu PNG decoder matches an independent decoder pixel for pixel. This headless check observes events; it is not a visual/hardware navigation or listening test.
 - Packaged beta opens its native macOS window. Security-scoped file/folder access and the sandboxed build path still need interactive beta testing.
+- App Store Connect upload succeeds without the earlier category error or helper-symbol warnings. Build 1.0 (3) finished processing on 6 October 2026; the existing internal tester group shows **Testing**. English (U.K.) What to Test notes are saved.
 
 An earlier synthetic TrueHD test exposed missing PES substream identifiers. `--new-audio-pes` now explicitly separates TrueHD and its AC-3 core. The final fixture passes independent full decode and packet equality; earlier test builds are superseded. Raster image loading now uses a synchronous PNG decoder and a standard DVB buffered image, with application-owned menu event delivery; mix selection runs after prefetch/start. Repeated playback exposed the asynchronous image-loader race before these changes.
 
@@ -22,6 +23,6 @@ An earlier synthetic TrueHD test exposed missing PES substream identifiers. `--n
 - Commercial DTS-HD MA, DTS:X, TrueHD Atmos, DD+ substream conformance, object/extension metadata and every channel layout. This beta copies prepared bitstreams and does not encode immersive masters.
 - Pure Audio/AES-21id certification, mShuttle, licensed Dolby Vision authoring, HDR10+ validation, AACS, production disc IDs and BDCMF/UHD-BDCMF mastering.
 - Factory acceptance and replicated-disc layer layout. Get written delivery requirements and test the plant's production check disc.
-- The first upload was rejected for a missing app-category key; the final archive includes the Video category. TestFlight processing/review and install behaviour are separate from archive success; verify the build's state in App Store Connect.
+- TestFlight installation and real sandboxed workflows on testers' Macs. External beta review and App Store review have not been requested. The earlier rejected archive is superseded by build 1.0 (3), which includes the Video category and matching helper dSYMs.
 
 Local test outputs, generated synthetic masters and full diagnostics stay outside Git. They contain source paths and signing details and are not production masters.
