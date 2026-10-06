@@ -1,0 +1,10 @@
+{
+  "ffmpeg": {
+    "commit": "140fd653aed8cad774f991ba083e2d01e86420c7",
+    "sha256": "4a0c4a8ebd277c217038f14ddf94f890937f261c7d8b846fc5c90129f6f6c8e8"
+  },
+  "x264": {
+    "commit": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
+    "sha256": "142c4deb1f342f38033265b2ac37a764a2b6c914191859c72966dbce994e7e92"
+  }
+}

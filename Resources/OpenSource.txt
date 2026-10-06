@@ -1,0 +1,10 @@
+StageDisc application and menu runtime: MIT.
+tsMuxer and StageDisc UDF adapter: Apache License 2.0.
+FFmpeg 8.0 with static x264: GNU GPL version 2 or later.
+HD Cookbook BDJO writer: Sun Microsystems BSD notices.
+
+Corresponding sources, original notices and reproducible build instructions:
+https://github.com/lurcheous73/stagedisc
+ThirdParty/sources contains the exact FFmpeg and x264 source archives.
+Tools/build-media-tools.sh records the complete configuration.
+No Java installation is required to author a disc.
