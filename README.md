@@ -82,3 +82,7 @@ stage-disc-cli build demo.stagedisc /absolute/path/to/builds --resources /absolu
 `Tools/testflight-macos.sh` archives and exports/uploads for macOS with the existing Xcode account, or an optional App Store Connect API env file outside the repository. It requires working Mac App Distribution / Mac Installer Distribution signing and `STAGEDISC_SYMBOLS_DIR` containing matching helper dSYMs. Both tool build scripts can write to that folder; `Tools/verify-helper-symbols.py` rejects stale symbols before upload. Upload completion and Apple processing must be verified in App Store Connect; an archive alone is not an upload.
 
 This beta has meaningful source tests, synthetic disc builds and software checks. Physical navigation/burns, commercial Atmos/DTS-HD/X masters, UHD players and production mastering remain unverified. See [VERIFICATION.md](VERIFICATION.md).
+
+## Source for GPL helpers in 1.0 (5)
+
+See [the corresponding source guide](SOURCES-1.0.5.md) for the bundled DVD-Audio, DVD-Video, FFmpeg and x264 executables.
